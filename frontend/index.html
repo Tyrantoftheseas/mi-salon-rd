@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MisalonRD</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+<main class="container">
+
+<!-- CALENDARIO SEMANAL (ADMIN)-->
+ <section class="section-card">
+  <header class="section-header">
+
+
+    <h2> Agenda - semana actual</h2>
+
+    <p class="muted"> Vista semanal estatica(prototipo sin js)</p>
+    </header>
+
+    <div class="calendar-card">
+     <div class="calendar-head">
+        <button class="nav-btn" title="Semana Anterior"></button>
+        <strong> Semana 43 - Octubre 2025</strong>
+        <button class="nav-btn" tittle="semana siguiente"></button>
+    
+    
+    </div>
+
+     <!--tabla de calendario-->
+     <table class="calendar">
+       <thead>
+        <tr>
+            <th>hora</th>
+            <th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th><th>Dom</th>
+            </tr>
+
+        </tr>
+
+
+    </thead> 
+    <tbody>
+      <tr>
+        <td class="time">9:00</td>
+
+        <td><div class="event">corte - Ana / Laura </div></td>
+        <td></td><td></td><td></td>
+        <td><div class="event">Color-Maria / Sofia</div></td>    
+        <td></td><td></td>
+    </tr>
+
+    <tr>
+        <td class="time">10:00</td>        
+        <td></td>    
+        <td><div class="event">Barba — Carlos / Diego</div></td>
+        <td></td><td></td><td></td><td></td><td></td>
+
+        </tr>
+
+
+
+       </tbody>
+
+     </table>
+     <p>fin calendario semanal</p>
+
+    </div>
+
+  
+
+
+
+
+
+ </section>
+
+<!--- FIN CALENDARIO SEMANAL  --> 
+
+<!-- FORMULARIO NUEVA / Editar cita-->
+
+<section class="section-card">
+
+<header class="section-header">
+    <h2>Nueva / Editar cita</h2>
+    <p class="muted"> Formulario visual( SIN JS AUN)</p>
+
+
+</header>
+
+
+<!--Empieza el formulario     
+     En el CSS, los estilos esperan .form-grid y cada campo dentro de .field --> 
+
+<form class="form-grid" action="#" method="post">
+
+ <!--servicio-->
+
+ <label class="field">
+  <span>Servicio</span>
+  <input type="text" placeholder="Corte / Color / Peinado" />
+ </label>
+
+ <!-- TECNICO / ESTILISTA-->
+ <label class="field">
+    <span> Tecnico </span>
+    <select> 
+        <option> - seleccionar -</option>    
+        <option>Ana</option>
+        <option>Carlos</option>
+        <option>María</option>
+    </select>
+ </label>
+
+ <!-- Cliente -->
+ <label class="field">
+    <span>Cliente</span>
+    <input type="text" placeholder="Nombre del cliente" />
+
+ </label>
+
+ <!-- fecha -->
+ <label class="field">
+  <span> fecha</span>
+  <input type="date" />
+ </label> 
+
+
+ <!-- Hora -->
+ <label class="field">
+  <span>Hora</span>
+  <input type="time" />
+
+ </label>
+
+
+ <!-- Estado -->
+ <label class="field">
+   <span>Estado</span>
+   <select>
+    <option>Agendada</option>
+    <option>Cancelada</option>
+
+   </select>
+  
+ </label>
+
+ <!-- Notas -->
+ <label class="field field-full">
+ <span>Notas</span>
+ <textarea rows="3" placeholder="Observaciones..."></textarea>
+ </label>
+
+
+   <!-- Acciones -->
+ <div class="form-actions">
+    <button type="reset" class="btn secondary">Limpiar</button>
+    <button type="submit" class="btn">Guardar</button>
+  </div>
+</form>
+
+</section>
+
+</main>
+
+  <footer class="site-footer">
+    <p>© 2025 MiSalonRD</p>
+    <a href="cliente.html">Ir a Panel Cliente</a>
+
+  </footer>
+
+
+</body>
+</html>

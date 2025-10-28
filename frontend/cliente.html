@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cliente MiSalonRd</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body class="cliente">
+
+<!--CABECERA PARA VISTA-->
+  <header class="site-header">
+    <div class="brand">
+
+      <div>
+     
+        <p class="subtitle">Panel del Cliente (prototipo sin JS)</p>
+      </div>
+    </div>
+    <nav class="top-nav">
+    <!-- USAR ESTO para ir al admin mientras tanto en lo que se hace el loggin-->
+      <a href="index.html">Ir a Panel Admin</a>
+    </nav>
+  </header>
+
+<!-- abre el contenedor principaL-->
+<main class="Container container-narrow">
+
+<!-- SECCION: mis citas -->
+
+    <section class="section-card">
+      <header class="section-header">
+        <h2>Mis citas</h2> 
+        <p class="muted"> Listado de tus reservas</p>
+        
+      </header>
+
+      <div class="list">
+        <article class="card appointment">
+          <div> 
+             <strong>10:30 — Color Raíz</strong>
+            <div class="meta">Técnico: María · Estado: Agendada · Fecha: 2025-10-28</div>
+          </div>
+           <div class="actions">
+            <!-- Botones visuales (no funcionales aún) -->
+            <button class="btn secondary" title="Reagendar">re-agendar</button>
+            <button class="btn" title="Cancelar">Cancelar</button>
+          </div>
+
+
+        </article>
+
+      </div>
+    </section>
+
+     <!-- SECCIÓN: Agendar nueva cita  -->
+    <section class="section-card">
+      <header class="section-header"><h2>Agendar nueva cita</h2></header>
+
+      <!-- FORMULARIO visual: en el CSS los estilos esperan .form-grid y .field -->
+      <form class="form-grid" action="#" method="post">
+        <label class="field">
+          <span>Servicio</span>
+          <input type="text" placeholder="Corte / Color / Peinado" />
+        </label>
+
+        <label class="field">
+          <span>Técnico</span>
+          <select>
+            <option>— Seleccionar —</option>
+            <option>Ana</option>
+            <option>Carlos</option>
+            <option>María</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Fecha</span>
+          <input type="date" />
+        </label>
+
+        <label class="field">
+          <span>Hora</span>
+          <input type="time" />
+        </label>
+
+        <div class="form-actions">
+          <button type="reset" class="btn secondary">Limpiar</button>
+          <button type="submit" class="btn">Reservar</button>
+        </div>
+      </form>
+
+      <p class="muted" style="margin-top:8px">
+       <!--nota Con JavaScript validar que no existan reservas duplicadas
+        (mismo técnico y hora) y que la hora no sea pasada. -->
+      </p>
+    </section>
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+    
+</body>
+</html>

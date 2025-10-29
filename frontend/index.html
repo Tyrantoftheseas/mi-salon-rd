@@ -116,12 +116,14 @@
     </select>
  </label>
 
- <!-- Cliente -->
- <label class="field">
-    <span>Cliente</span>
-    <input type="text" placeholder="Nombre del cliente" />
+<!-- Cliente (con autocompletar) -->
+<label class="field" style="position: relative;">
+  <span>Cliente</span>
+  <input id="cliente-input" type="text" placeholder="Nombre o teléfono del cliente" autocomplete="off" />
+  <!-- Contenedor para sugerencias -->
+  <ul id="cliente-sugerencias" class="autocomplete-list" aria-label="Sugerencias de clientes"></ul>
+</label>
 
- </label>
 
  <!-- fecha -->
  <label class="field">
@@ -173,6 +175,6 @@
 
   </footer>
 
-
+<script defer src="js/code.js"></script>
 </body>
 </html>

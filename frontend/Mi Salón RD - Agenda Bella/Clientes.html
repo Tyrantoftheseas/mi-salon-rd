@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Registrados - Mi Salón RD</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="sidebar-title">ADMIN</h2>
+
+        <a href="panel.html" class="sidebar-link">
+            <span class="material-icons">dashboard</span> Panel
+        </a>
+
+        <a href="citas.html" class="sidebar-link">
+            <span class="material-icons">event</span> Citas
+        </a>
+
+        <a href="servicios.html" class="sidebar-link">
+            <span class="material-icons">content_cut</span> Servicios
+        </a>
+
+        <a href="estilistas.html" class="sidebar-link">
+            <span class="material-icons">face_retouching_natural</span> Estilistas
+        </a>
+
+        <a href="clientes.html" class="sidebar-link active">
+            <span class="material-icons">groups</span> Clientes
+        </a>
+        
+        <a href="../login.html" class="sidebar-link salir">
+            <span class="material-icons">logout</span> Salir
+        </a>
+    </aside>
+
+    <!-- Main -->
+    <div class="admin-main">
+        <!-- Usuario actual -->
+        <div class="usuario-activo" style="display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-bottom: 15px;">
+            <span class="material-icons">account_circle</span>
+            <p><strong>Usuario:</strong> Admin Principal</p>
+        </div>
+
+        <h2>Clientes Registrados</h2>
+        <p>Administra todos los clientes del sistema</p>
+
+       
+        <table class="tabla-citas">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo Electrónico</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Laura Martínez</td>
+                    <td>lauramartinez@example.com</td>
+                    <td>829-555-1234</td>
+                    <td>
+                        <button class="btn-tabla editar">Editar</button>
+                        <button class="btn-tabla cancelar">Eliminar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>José Ramírez</td>
+                    <td>jose.ramirez@example.com</td>
+                    <td>809-321-7890</td>
+                    <td>
+                        <button class="btn-tabla editar">Editar</button>
+                        <button class="btn-tabla cancelar">Eliminar</button>
+                    </td>
+                </tr>
+
+                <!-- Ejemplo vacío -->
+                <!--
+                <tr>
+                    <td colspan="4">No hay clientes registrados.</td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

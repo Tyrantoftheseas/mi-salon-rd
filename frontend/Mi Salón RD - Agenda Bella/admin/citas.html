@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrar Citas</title>
+
+    <!-- Material Icons (necesario para los iconos del sidebar) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="sidebar-title">ADMIN</h2>
+
+        <a href="panel.html" class="sidebar-link">
+            <span class="material-icons">dashboard</span> Panel
+        </a>
+
+        <a href="citas.html" class="sidebar-link active">
+            <span class="material-icons">event</span> Citas
+        </a>
+
+        <a href="servicios.html" class="sidebar-link">
+            <span class="material-icons">content_cut</span> Servicios
+        </a>
+
+        <a href="estilistas.html" class="sidebar-link">
+            <span class="material-icons">face_retouching_natural</span> Estilistas
+        </a>
+
+        <a href="../login.html" class="sidebar-link salir">
+            <span class="material-icons">logout</span> Salir
+        </a>
+    </aside>
+
+    <!-- Main -->
+    <main class="admin-main">
+        <h2>Citas Agendadas</h2>
+        <p>Gestione todas las citas registradas</p>
+
+        <h2>Citas Agendadas</h2>
+<p>Gestione todas las citas registradas</p>
+
+<button class="btn agregar-cita" style="margin-bottom: 15px;">➕ Agregar Cita</button>
+
+<table class="tabla-citas">
+  <!-- encabezado y cuerpo de la tabla -->
+</table>
+
+
+        <!-- Tabla de citas -->
+        <table class="tabla-citas">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Servicio</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Pérez</td>
+                    <td>Corte de Pelo</td>
+                    <td>30/10/2025</td>
+                    <td>10:00 AM</td>
+                    <td class="estado-activo">Pendiente</td>
+                    <td>
+                        <button class="btn-tabla editar">Editar</button>
+                        <button class="btn-tabla cancelar">Cancelar</button>
+                    </td>
+                </tr>
+
+                <!-- Ejemplo vacío (queda bonito si no hay registros) -->
+                <!--
+                <tr>
+                    <td colspan="6">No hay citas registradas.</td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+
+    </main>
+
+<script src="../sj/CORE.js"></script>
+<script src="../sj/admin.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    Admin.initCitasTable();
+  });
+</script>
+
+</body>
+</html>

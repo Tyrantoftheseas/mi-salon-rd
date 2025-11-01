@@ -1,0 +1,428 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4ffff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #00bcd4, #ffffff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.titulo {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitulo {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+/* Botones */
+.btn, .btn-outline {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn {
+    background: #00b4d8;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background: #0090ad;
+}
+
+.btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #00aacc;
+}
+
+/* FORMULARIO CENTRADO Y ARREGLADO */
+.container-form {
+    width: 90%;
+    max-width: 380px;
+    background: #ffffff;
+    padding: 30px 35px;
+    margin: 80px auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-form h2 {
+    margin-bottom: 25px;
+    color: #0090ad;
+    font-size: 1.5rem;
+}
+
+/* Inputs más compactos y con mejor separación */
+.container-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px; /* espacio entre campos */
+    border-radius: 25px;
+    border: 2px solid #00bcd480;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container-form input:focus {
+    border-color: #0090ad;
+}
+
+/* Botón ancho total */
+.btn.full {
+    width: 100%;
+    padding: 13px;
+    border-radius: 25px;
+    background: #00b4d8;
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.full:hover {
+    background: #0090ad;
+}
+
+/* Texto inferior */
+.texto-sec {
+    margin-top: 12px;
+    font-size: 0.9rem;
+}
+
+.texto-sec a {
+    color: #0090ad;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.texto-sec a:hover {
+    text-decoration: underline;
+}
+
+/* Página Agendar */
+.titulo-pagina {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #0090ad;
+}
+
+.servicios {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card-servicio {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card-servicio h4 {
+    margin: 0;
+    color: #00b4d8;
+}
+
+.card-servicio p {
+    font-size: 0.9rem;
+    margin: 8px 0;
+}
+
+.btn-select {
+    background: #00b4d8;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-select:hover {
+    background: #0090ad;
+}
+
+.agenda {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-fecha, .input-hora {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #00bcd480;
+}
+
+/* Tabla citas */
+.tabla-citas {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.tabla-citas th, .tabla-citas td {
+    padding: 12px;
+    text-align: center;
+}
+.tabla-citas thead {
+    background: #0090ad;
+    color: #fff;
+}
+.tabla-citas tbody tr {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Botones tabla */
+.btn-tabla {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.editar {
+    background: #00b4d8;
+    color: #fff;
+}
+.cancelar {
+    background: #ff4b4b;
+    color: #fff;
+}
+
+/* Tarjeta móvil */
+.cita-card {
+    display: none;
+    width: 90%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.acciones {
+    margin-top: 10px;
+}
+.estado-activo {
+    color: #0090ad;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+    .tabla-citas {
+        display: none;
+    }
+    .cita-card {
+        display: block;
+    }
+}
+
+/* PANEL ADMIN */
+.admin-body {
+    display: flex;
+    background: #f4ffff;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #0090ad;
+    padding: 20px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+}
+
+.sidebar-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background: #00b4d8;
+}
+
+.sidebar-link.salir {
+    margin-top: 30px;
+    background: #e63946;
+}
+.sidebar-link.salir:hover {
+    background: #c1121f;
+}
+
+/* Main admin */
+.admin-main {
+    margin-left: 240px;
+    padding: 30px;
+    width: calc(100% - 240px);
+}
+
+.admin-cards {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.admin-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.admin-card .icon {
+    font-size: 38px;
+    color: #0090ad;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .sidebar {
+        width: 180px;
+    }
+    .admin-main {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .admin-main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Tablas admin (Citas, Servicios, Estilistas) */
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table thead {
+    background: #0090ad;
+    color: #fff;
+}
+
+button.btn-agregar {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    background: #00b4d8;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn-agregar:hover {
+    background: #0090ad;
+}
+
+button.btn-editar {
+    background: #00b4d8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn-eliminar {
+    background: #ff4b4b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn-editar:hover {
+    background: #0090ad;
+}
+
+button.btn-eliminar:hover {
+    background: #e63946;
+}

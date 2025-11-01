@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilistas</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="sidebar-title">ADMIN</h2>
+
+        <a href="panel.html" class="sidebar-link">
+            <span class="material-icons">dashboard</span> Panel
+        </a>
+
+        <a href="citas.html" class="sidebar-link">
+            <span class="material-icons">event</span> Citas
+        </a>
+
+        <a href="servicios.html" class="sidebar-link">
+            <span class="material-icons">content_cut</span> Servicios
+        </a>
+
+        <a href="estilistas.html" class="sidebar-link active">
+            <span class="material-icons">face_retouching_natural</span> Estilistas
+        </a>
+
+        <a href="../login.html" class="sidebar-link salir">
+            <span class="material-icons">logout</span> Salir
+        </a>
+    </aside>
+
+    <!-- Main -->
+    <div class="admin-main">
+        <h2>Personal del Salón</h2>
+        <p>Administra los estilistas registrados</p>
+
+        <button class="btn" style="margin-bottom: 15px;">➕ Agregar Estilista</button>
+
+        <table class="tabla-citas">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especialidad</th>
+                    <th>Horario</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+
+                    <td>María González</td>
+                    <td>Color y Mechas</td>
+                    <td>8 AM - 6 PM</td>
+                    <td>
+                        <button class="btn-tabla editar">Editar</button>
+                        <button class="btn-tabla cancelar">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

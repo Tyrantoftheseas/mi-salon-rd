@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Citas - Mi Salón RD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2 class="titulo-pagina">Mis Citas</h2>
+
+    <!-- Tabla para PCs -->
+    <table class="tabla-citas">
+        <thead>
+            <tr>
+                <th>Servicio</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Peinado</td>
+                <td>2025-10-20</td>
+                <td>10:00 AM</td>
+                <td class="estado-activo">Pendiente</td>
+                <td>
+                    <button class="btn-tabla editar">Editar</button>
+                    <button class="btn-tabla cancelar">Cancelar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tarjetas para móviles -->
+    <div class="cita-card">
+        <h4>Peinado</h4>
+        <p>Fecha: 2025-10-20</p>
+        <p>Hora: 10:00 AM</p>
+        <p class="estado-activo">Pendiente</p>
+        <div class="acciones">
+            <button class="btn-tabla editar">Editar</button>
+            <button class="btn-tabla cancelar">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+</html>
